@@ -1,0 +1,44 @@
+footer{
+    .jumbo-nav{
+        height: 300px;
+        @include centering(30px, 30px);
+        background-color: darkgray;
+        background-image: url('/storage/imgs/dc-logo-bg.png'), url('/storage/imgs/footer-bg.jpg');
+        background-position: 90%, center;
+        background-size: 420px 420px, cover;
+        background-repeat: no-repeat;
+        ul.nav-section{
+            display: flex;
+            h2{
+               color: white;
+               font-size: 18px;
+            }
+            &>li{
+                margin-right: 50px;
+                color: yellow;
+            }
+        }
+        a{
+            color: dodgerblue;
+        }
+    }
+
+    .socials{
+        background-color:lightslategrey;
+        @include centering(20px, 20px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .blue-link{
+            @include linkBtnBlue(0, 20px 20px, transparent, dodgerblue);
+        }
+
+        ul{
+            display: flex;
+            li{
+                margin-left: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+// Proprietà main homepage
+main{
+
+    // Sezione collezione serie
+    .series{
+        @include centering(40px, 20px);
+        background-color: darkblue;
+        text-align: center;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -20px;
+            .cover{
+                flex-basis: calc((100% / 6) - 40px);
+                margin: 0 20px;
+                min-width: 150px;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .blue-link{
+            @include linkBtnBlue(30px 20px 0, 20px 50px, dodgerblue, dodgerblue);
+        }
+    }
+
+    .blue-separator{
+        background-color: dodgerblue;
+        color: white;
+        @include centering(50px, 50px);
+        ul{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}

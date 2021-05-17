@@ -1,0 +1,21 @@
+// Link partials files
+@import 'partials/variables';
+@import 'partials/header';
+@import 'partials/homepage';
+@import 'partials/footer';
+
+// Proprietà generali
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}

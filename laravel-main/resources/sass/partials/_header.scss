@@ -1,0 +1,39 @@
+// Proprietà header
+header{
+    // sezione
+    .linked-sites ul{
+        @include centering(0, 0);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #0282f9;
+        height: 20px;
+        li{
+            margin: 0 20px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .navbar ul{
+        @include centering(0, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: white;
+        height: 50px;
+        li{
+            color: grey;
+        }
+    }
+
+    .jumbo{
+        height: 400px;
+        background-color: indigo;
+        background-image: url('/storage/imgs/jumbotron.jpg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

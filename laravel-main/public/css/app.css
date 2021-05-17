@@ -1,0 +1,158 @@
+header .linked-sites ul {
+  padding: 0 10% 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #0282f9;
+  height: 20px;
+}
+
+header .linked-sites ul li {
+  margin: 0 20px;
+}
+
+header .linked-sites ul li:last-child {
+  margin-right: 0;
+}
+
+header .navbar ul {
+  padding: 0 10% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  height: 50px;
+}
+
+header .navbar ul li {
+  color: grey;
+}
+
+header .jumbo {
+  height: 400px;
+  background-color: indigo;
+  background-image: url("/storage/imgs/jumbotron.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .series {
+  padding: 40px 10% 20px;
+  background-color: darkblue;
+  text-align: center;
+}
+
+main .series ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+main .series ul .cover {
+  flex-basis: calc((100% / 6) - 40px);
+  margin: 0 20px;
+  min-width: 150px;
+}
+
+main .series ul .cover img {
+  width: 100%;
+}
+
+main .series .blue-link {
+  display: inline-block;
+  background-color: dodgerblue;
+  border: 2px solid dodgerblue;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 50px;
+  margin: 30px 20px 0;
+}
+
+main .blue-separator {
+  background-color: dodgerblue;
+  color: white;
+  padding: 50px 10% 50px;
+}
+
+main .blue-separator ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .jumbo-nav {
+  height: 300px;
+  padding: 30px 10% 30px;
+  background-color: darkgray;
+  background-image: url("/storage/imgs/dc-logo-bg.png"), url("/storage/imgs/footer-bg.jpg");
+  background-position: 90%, center;
+  background-size: 420px 420px, cover;
+  background-repeat: no-repeat;
+}
+
+footer .jumbo-nav ul.nav-section {
+  display: flex;
+}
+
+footer .jumbo-nav ul.nav-section h2 {
+  color: white;
+  font-size: 18px;
+}
+
+footer .jumbo-nav ul.nav-section > li {
+  margin-right: 50px;
+  color: yellow;
+}
+
+footer .jumbo-nav a {
+  color: dodgerblue;
+}
+
+footer .socials {
+  background-color: lightslategrey;
+  padding: 20px 10% 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .socials .blue-link {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid dodgerblue;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 20px;
+  margin: 0;
+}
+
+footer .socials ul {
+  display: flex;
+}
+
+footer .socials ul li {
+  margin-left: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+

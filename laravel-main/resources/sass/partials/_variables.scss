@@ -1,0 +1,15 @@
+// Mixin
+@mixin centering($paddingTop, $paddingBottom) {
+    padding: $paddingTop 10% $paddingBottom;
+}
+
+@mixin linkBtnBlue($margin, $padding, $bg, $bd-col) {
+    display: inline-block;
+    background-color: $bg;
+    border: 2px solid $bd-col;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: $padding;
+    margin: $margin;
+}
