@@ -3,6 +3,10 @@
     padding: $paddingTop 10% $paddingBottom;
 }
 
+@mixin centeringSerie($paddingTop, $paddingBottom) {
+    padding: $paddingTop 15% $paddingBottom;
+}
+
 @mixin linkBtnBlue($margin, $padding, $bg, $bd-col) {
     display: inline-block;
     background-color: $bg;

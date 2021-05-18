@@ -8,7 +8,7 @@ main{
             position: absolute;
             z-index: 10;
             top: -200px;
-            left: 10%;
+            left: 15%;
             border: 1px solid white;
             img{
                 height: 100%;
@@ -36,14 +36,83 @@ main{
 
     .description{
         background-color: white;
-        @include centering(40px, 40px);
+        @include centeringSerie(60px, 50px);
+        display: flex;
+        
         .info{
-            width: 70%;
+            font-size: 15px;
+            flex-basis: calc(100% - 350px);
             h2{
                 color: #003f5e;
             }
+            .sell{
+                padding: 0 30px;
+                margin: 20px 0;
+                background-color: #55ba59;
+                border-bottom: 1px solid #357739;
+                color: #baf980;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                div{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        height: 100%;
+                        padding: 15px 20px 15px 0;
+                        &.white, .white{
+                            color: white;
+                        }
+                        &.border{
+                            border-left: 1px solid #357739;
+                            padding: 15px 0 15px 20px;
+                        }
+                    }
+                }
 
+            }
+            p{
+                color: #555a60;
+                line-height: 28px;
+            }
         }
 
+        .advertisement{
+            flex-basis: 300px;
+            margin-left: 50px;
+            position: relative;
+            img{
+                width: 100%;
+                vertical-align: middle;
+            }
+            h5{
+                color: #555a60;
+                position:  absolute;
+                top: -20px;
+                right: 0;
+                font-size: 15px
+            }
+        }
+    }
+
+    .specs{
+        @include centeringSerie(20px, 0);
+        background-color: #f6f6f6;
+        display: flex;
+        div{
+            padding: 10px 0;
+            flex-basis: calc(50% - 40px);
+            h2{
+                color: #003f5e;
+                width: 100%;
+            }
+            .row{
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
     }
 }

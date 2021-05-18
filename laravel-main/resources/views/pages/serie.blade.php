@@ -24,14 +24,56 @@
                 </h2>
 
                 <div class="sell">
-                    <span>U.S. Price: {{$thisSerie['price']}}</span>
-                    <span>AVAIABLE</span>
-                    <span>Check Avaiability <i class="fas fa-caret-down"></i></span>
+                    <div>
+                        <span>
+                            U.S. Price: &#160;
+                            <span class="white">
+                                {{$thisSerie['price']}}
+                            </span>
+                        </span>
+                    </div>
+
+                    <div>
+                        <span>AVAIABLE</span>
+                        <span class="border">
+                            <a href="#" class="white">
+                                Check Avaiability <i class="fas fa-caret-down"></i>
+                            </a>
+                        </span>
+                    </div>
                 </div>
 
                 <p>
                     {{$thisSerie['description']}}
                 </p>
+            </div>
+
+            <div class="advertisement">
+                <a href="#">
+                    <img src="/storage/imgs/adv.jpg" alt="Advertisement">
+                </a>
+
+                <h5>
+                    ADVERTISEMENT
+                </h5>
+            </div>
+        </section>
+
+        <section class="specs">
+            <div>
+                <h2>Talent</h2>
+                <div class="row">
+                    <h5>
+                        Art by:
+                    </h5>
+                    <p>
+                        CIaoo
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h2>Specs</h2>
             </div>
         </section>
 

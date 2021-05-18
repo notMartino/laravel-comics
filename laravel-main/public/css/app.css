@@ -195,7 +195,7 @@ main .blue-separator.img-container .float-img {
   position: absolute;
   z-index: 10;
   top: -200px;
-  left: 10%;
+  left: 15%;
   border: 1px solid white;
 }
 
@@ -225,15 +225,96 @@ main .blue-separator.img-container .float-img .gallery {
 
 main .description {
   background-color: white;
-  padding: 40px 10% 40px;
+  padding: 60px 15% 50px;
+  display: flex;
 }
 
 main .description .info {
-  width: 70%;
+  font-size: 15px;
+  flex-basis: calc(100% - 350px);
 }
 
 main .description .info h2 {
   color: #003f5e;
+}
+
+main .description .info .sell {
+  padding: 0 30px;
+  margin: 20px 0;
+  background-color: #55ba59;
+  border-bottom: 1px solid #357739;
+  color: #baf980;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .description .info .sell div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+main .description .info .sell div span {
+  height: 100%;
+  padding: 15px 20px 15px 0;
+}
+
+main .description .info .sell div span.white,
+main .description .info .sell div span .white {
+  color: white;
+}
+
+main .description .info .sell div span.border {
+  border-left: 1px solid #357739;
+  padding: 15px 0 15px 20px;
+}
+
+main .description .info p {
+  color: #555a60;
+  line-height: 28px;
+}
+
+main .description .advertisement {
+  flex-basis: 300px;
+  margin-left: 50px;
+  position: relative;
+}
+
+main .description .advertisement img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+main .description .advertisement h5 {
+  color: #555a60;
+  position: absolute;
+  top: -20px;
+  right: 0;
+  font-size: 15px;
+}
+
+main .specs {
+  padding: 20px 15% 0;
+  background-color: #f6f6f6;
+  display: flex;
+}
+
+main .specs div {
+  padding: 10px 0;
+  flex-basis: calc(50% - 40px);
+}
+
+main .specs div h2 {
+  color: #003f5e;
+  width: 100%;
+}
+
+main .specs div .row {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer .jumbo-nav {
