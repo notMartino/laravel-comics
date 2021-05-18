@@ -10,40 +10,62 @@
         <nav>
             <ul>
                 <li>
-                    Logo
+                    <a href="/">
+                        <img src="/storage/imgs/dc-logo.png" alt="DC Logo">
+                    </a>
                 </li>
                 <li>
-                    Characters
+                    <a href="#">
+                        CHARACTERS
+                    </a>
                 </li>
                 <li>
-                    Comics
+                    <a href="/">
+                        COMICS
+                    </a>
                 </li>
                 <li>
-                    Movies
+                    <a href="#">
+                        MOVIES
+                    </a>
                 </li>
                 <li>
-                    TV
+                    <a href="#">
+                        TV
+                    </a>
                 </li>
                 <li>
-                    Games
+                    <a href="#">
+                        GAMES
+                    </a>
                 </li>
                 <li>
-                    Collectibles
+                    <a href="#">
+                        COLLECTIBLES
+                    </a>
                 </li>
                 <li>
-                    Videos
+                    <a href="#">
+                        VIDEOS
+                    </a>
                 </li>
                 <li>
-                    Fans
+                    <a href="#">
+                        FANS
+                    </a>
                 </li>
                 <li>
-                    News
+                    <a href="#">
+                        NEWS
+                    </a>
                 </li>
                 <li>
-                    Shop
+                    <a href="#">
+                        SHOP
+                    </a>
                 </li>
                 <li>
-                    Search bar
+                    Search
                 </li>
             </ul>
         </nav>

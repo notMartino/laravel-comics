@@ -1,25 +1,40 @@
 footer{
     .jumbo-nav{
-        height: 300px;
+        height: 440px;
         @include centering(30px, 30px);
         background-color: darkgray;
         background-image: url('/storage/imgs/dc-logo-bg.png'), url('/storage/imgs/footer-bg.jpg');
-        background-position: 90%, center;
-        background-size: 420px 420px, cover;
+        background-position: 90%, top;
+        background-size: 550px 550px, cover;
         background-repeat: no-repeat;
+        color: #959595;
         ul.nav-section{
             display: flex;
-            h2{
-               color: white;
-               font-size: 18px;
-            }
-            &>li{
+            .link-section{
                 margin-right: 50px;
-                color: yellow;
+                h2{
+                    font-size: 18px;
+                    color: white;
+                    margin-bottom: 15px;
+                }
+                ul{
+                    margin-bottom: 20px;
+                    li{
+                        margin: 3px 0;
+                        a{
+                            color: #959595;
+                            font-size: 13px;
+                        }
+                    }
+                }
             }
         }
-        a{
-            color: dodgerblue;
+
+        p{
+            font-size: 13px;
+            a{
+                color: dodgerblue;
+            }
         }
     }
 
@@ -31,7 +46,7 @@ footer{
         align-items: center;
 
         .blue-link{
-            @include linkBtnBlue(0, 20px 20px, transparent, dodgerblue);
+            @include linkBtnBlue(0, 10px 20px, transparent, dodgerblue);
         }
 
         ul{

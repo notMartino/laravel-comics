@@ -14,7 +14,7 @@
                 @foreach ($data as $serie)
                     <li class="cover">
                         <img src="{{ $serie['thumb'] }}" alt="">
-                        {{$serie['title']}}
+                        <h4>{{strtoupper($serie['series'])}}</h4>
                     </li>
                 @endforeach
             </ul>
@@ -25,19 +25,34 @@
         <section class="blue-separator">
             <ul>
                 <li>
-                    Digital Comics
+                    <a href="#">
+                        <img src="{{asset('/storage/imgs/buy-comics-digital-comics.png')}}" alt="">
+                        DIGITAL COMICS
+                    </a>
                 </li>
                 <li>
-                    Digital Comics
+                    <a href="#">
+                        <img src="{{asset('/storage/imgs/buy-comics-merchandise.png')}}" alt="">
+                        DC MERCHANDISE
+                    </a>
                 </li>
                 <li>
-                    Digital Comics
+                    <a href="#">
+                        <img src="{{asset('/storage/imgs/buy-comics-subscriptions.png')}}" alt="">
+                        DIGITAL COMICS
+                    </a>
                 </li>
                 <li>
-                    Digital Comics
+                    <a href="#">
+                        <img src="{{asset('/storage/imgs/buy-comics-shop-locator.png')}}" alt="">
+                        DIGITAL COMICS
+                    </a>
                 </li>
                 <li>
-                    Digital Comics
+                    <a href="#">
+                        <img id="credit" src="{{asset('/storage/imgs/buy-dc-power-visa.svg')}}" alt="">
+                        DIGITAL COMICS
+                    </a>
                 </li>
             </ul>
         </section>

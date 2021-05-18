@@ -16,17 +16,22 @@ header .linked-sites ul li:last-child {
 }
 
 header .navbar ul {
-  padding: 0 10% 0;
+  padding: 15px 10% 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   background-color: white;
-  height: 50px;
 }
 
-header .navbar ul li {
-  color: grey;
+header .navbar ul li a {
+  color: #5e605e;
+  font-weight: bold;
+}
+
+header .navbar ul li img {
+  vertical-align: middle;
+  width: 70px;
 }
 
 header .jumbo {
@@ -38,9 +43,13 @@ header .jumbo {
   background-repeat: no-repeat;
 }
 
+main {
+  color: white;
+}
+
 main .series {
-  padding: 40px 10% 20px;
-  background-color: darkblue;
+  padding: 50px 10% 40px;
+  background-color: #1c1c1c;
   text-align: center;
 }
 
@@ -51,13 +60,24 @@ main .series ul {
 }
 
 main .series ul .cover {
+  text-align: left;
   flex-basis: calc((100% / 6) - 40px);
-  margin: 0 20px;
+  margin: 0 20px 30px;
   min-width: 150px;
 }
 
 main .series ul .cover img {
   width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main .series ul .cover h4 {
+  margin-top: 20px;
+  font-weight: normal;
 }
 
 main .series .blue-link {
@@ -67,47 +87,85 @@ main .series .blue-link {
   color: white;
   font-size: 18px;
   font-weight: bold;
-  padding: 20px 50px;
-  margin: 30px 20px 0;
+  padding: 10px 50px;
+  margin: 20px 20px 0;
 }
 
 main .blue-separator {
   background-color: dodgerblue;
   color: white;
-  padding: 50px 10% 50px;
+  padding: 30px 10% 30px;
 }
 
 main .blue-separator ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+main .blue-separator ul li {
+  margin: 20px 20px;
+}
+
+main .blue-separator ul li a {
+  color: white;
+}
+
+main .blue-separator ul li a img {
+  height: 60px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+main .blue-separator ul li a img#credit {
+  height: 40px;
+  margin: 10px 20px 10px 0;
 }
 
 footer .jumbo-nav {
-  height: 300px;
+  height: 440px;
   padding: 30px 10% 30px;
   background-color: darkgray;
   background-image: url("/storage/imgs/dc-logo-bg.png"), url("/storage/imgs/footer-bg.jpg");
-  background-position: 90%, center;
-  background-size: 420px 420px, cover;
+  background-position: 90%, top;
+  background-size: 550px 550px, cover;
   background-repeat: no-repeat;
+  color: #959595;
 }
 
 footer .jumbo-nav ul.nav-section {
   display: flex;
 }
 
-footer .jumbo-nav ul.nav-section h2 {
-  color: white;
-  font-size: 18px;
-}
-
-footer .jumbo-nav ul.nav-section > li {
+footer .jumbo-nav ul.nav-section .link-section {
   margin-right: 50px;
-  color: yellow;
 }
 
-footer .jumbo-nav a {
+footer .jumbo-nav ul.nav-section .link-section h2 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+footer .jumbo-nav ul.nav-section .link-section ul {
+  margin-bottom: 20px;
+}
+
+footer .jumbo-nav ul.nav-section .link-section ul li {
+  margin: 3px 0;
+}
+
+footer .jumbo-nav ul.nav-section .link-section ul li a {
+  color: #959595;
+  font-size: 13px;
+}
+
+footer .jumbo-nav p {
+  font-size: 13px;
+}
+
+footer .jumbo-nav p a {
   color: dodgerblue;
 }
 
@@ -126,7 +184,7 @@ footer .socials .blue-link {
   color: white;
   font-size: 18px;
   font-weight: bold;
-  padding: 20px 20px;
+  padding: 10px 20px;
   margin: 0;
 }
 
@@ -145,7 +203,8 @@ footer .socials ul li {
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: dodgerblue;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 ul {

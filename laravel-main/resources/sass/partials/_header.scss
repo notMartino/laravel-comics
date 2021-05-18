@@ -16,15 +16,21 @@ header{
         }
     }
     .navbar ul{
-        @include centering(0, 0);
+        @include centering(15px, 15px);
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         background-color: white;
-        height: 50px;
         li{
-            color: grey;
+            a{
+                color: #5e605e;
+                font-weight: bold;
+            }
+            img{
+                vertical-align: middle;
+                width: 70px;
+            }
         }
     }
 
