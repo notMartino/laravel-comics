@@ -169,22 +169,34 @@
 
         <ul>
             <li>
-                FOLLOW US
+                <a class="blue" href="#">
+                    FOLLOW US
+                </a>
             </li>
             <li>
-                <i class="fab fa-facebook"></i>
+                <a href="#">
+                    <img src="{{ asset('storage/imgs/footer-facebook.png') }}" alt="Facebook">
+                </a>
             </li>
             <li>
-                <i class="fab fa-facebook"></i>
+                <a href="#">
+                    <img src="{{ asset('storage/imgs/footer-twitter.png') }}" alt="Twitter">
+                </a>
             </li>
             <li>
-                <i class="fab fa-facebook"></i>
+                <a href="#">
+                    <img src="{{ asset('storage/imgs/footer-youtube.png') }}" alt="Twitter">
+                </a>
             </li>
             <li>
-                <i class="fab fa-facebook"></i>
+                <a href="#">
+                    <img src="{{ asset('storage/imgs/footer-pinterest.png') }}" alt="Twitter">
+                </a>
             </li>
             <li>
-                <i class="fab fa-facebook"></i>
+                <a href="#">
+                    <img src="{{ asset('storage/imgs/footer-periscope.png') }}" alt="Twitter">
+                </a>
             </li>
         </ul>
     </section>

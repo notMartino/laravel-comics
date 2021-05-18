@@ -33,26 +33,31 @@ footer{
         p{
             font-size: 13px;
             a{
-                color: dodgerblue;
+                color: #0282f9;
             }
         }
     }
 
     .socials{
-        background-color:lightslategrey;
-        @include centering(20px, 20px);
+        background-color:#303030;
+        @include centering(30px, 30px);
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .blue-link{
-            @include linkBtnBlue(0, 10px 20px, transparent, dodgerblue);
+            @include linkBtnBlue(0, 10px 20px, transparent, #0282f9);
         }
 
         ul{
             display: flex;
+            align-items: center;
             li{
                 margin-left: 20px;
+                .blue{
+                    color: #0282f9;
+                    font-weight: bold;
+                }
             }
         }
     }

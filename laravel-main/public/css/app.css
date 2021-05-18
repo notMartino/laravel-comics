@@ -227,12 +227,12 @@ footer .jumbo-nav p {
 }
 
 footer .jumbo-nav p a {
-  color: dodgerblue;
+  color: #0282f9;
 }
 
 footer .socials {
-  background-color: lightslategrey;
-  padding: 20px 10% 20px;
+  background-color: #303030;
+  padding: 30px 10% 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -241,7 +241,7 @@ footer .socials {
 footer .socials .blue-link {
   display: inline-block;
   background-color: transparent;
-  border: 2px solid dodgerblue;
+  border: 2px solid #0282f9;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -251,10 +251,16 @@ footer .socials .blue-link {
 
 footer .socials ul {
   display: flex;
+  align-items: center;
 }
 
 footer .socials ul li {
   margin-left: 20px;
+}
+
+footer .socials ul li .blue {
+  color: #0282f9;
+  font-weight: bold;
 }
 
 * {
