@@ -12,7 +12,7 @@
             <ul>
                 @foreach ($data as $serie)
                     <li class="cover">
-                        <a href="#">
+                        <a href="{{ route('thisSerie', $loop -> index) }}">
                             <img src="{{ $serie['thumb'] }}" alt="">
                             <h4>{{strtoupper($serie['series'])}}</h4>
                         </a>

@@ -86,22 +86,12 @@
                     </li>
                     <li>
                         <a href="#">
-                            Jobs
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
                             Subscription
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             Talent Workshops
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            CPSC Certifications
                         </a>
                     </li>
                     <li>
