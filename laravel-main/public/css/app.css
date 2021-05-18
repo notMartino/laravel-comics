@@ -1,10 +1,10 @@
 header .linked-sites ul {
-  padding: 0 10% 0;
+  padding: 3px 10% 3px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background-color: #0282f9;
-  height: 20px;
+  font-size: 13px;
 }
 
 header .linked-sites ul li {
@@ -13,6 +13,10 @@ header .linked-sites ul li {
 
 header .linked-sites ul li:last-child {
   margin-right: 0;
+}
+
+header .linked-sites ul li a {
+  color: white;
 }
 
 header .navbar ul {
@@ -24,14 +28,59 @@ header .navbar ul {
   background-color: white;
 }
 
+header .navbar ul li {
+  position: relative;
+}
+
 header .navbar ul li a {
   color: #5e605e;
   font-weight: bold;
 }
 
+header .navbar ul li a.active {
+  color: #0282f9;
+}
+
+header .navbar ul li a i {
+  color: #0282f9;
+  margin-left: 3px;
+}
+
 header .navbar ul li img {
   vertical-align: middle;
   width: 70px;
+}
+
+header .navbar ul li .active-bar {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #0282f9;
+}
+
+header .navbar ul li.search-bar {
+  width: 150px;
+}
+
+header .navbar ul li.search-bar input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid dodgerblue;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: right;
+  padding: 5px 25px;
+  outline: none;
+}
+
+header .navbar ul li.search-bar i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 header .jumbo {
@@ -44,11 +93,22 @@ header .jumbo {
 }
 
 main {
+  position: relative;
+}
+
+main .title-box {
+  position: absolute;
+  top: -25px;
+  left: calc(10% - 10px);
+  font-size: 25px;
+  padding: 10px 20px;
+  background-color: #0282f9;
   color: white;
+  font-weight: bold;
 }
 
 main .series {
-  padding: 50px 10% 40px;
+  padding: 60px 10% 40px;
   background-color: #1c1c1c;
   text-align: center;
 }
@@ -62,7 +122,7 @@ main .series ul {
 main .series ul .cover {
   text-align: left;
   flex-basis: calc((100% / 6) - 40px);
-  margin: 0 20px 30px;
+  margin: 0 20px 50px;
   min-width: 150px;
 }
 
@@ -76,23 +136,24 @@ main .series ul .cover img {
 }
 
 main .series ul .cover h4 {
+  color: white;
   margin-top: 20px;
   font-weight: normal;
 }
 
 main .series .blue-link {
   display: inline-block;
-  background-color: dodgerblue;
-  border: 2px solid dodgerblue;
+  background-color: #0282f9;
+  border: 2px solid #0282f9;
   color: white;
   font-size: 18px;
   font-weight: bold;
   padding: 10px 50px;
-  margin: 20px 20px 0;
+  margin: 0 20px;
 }
 
 main .blue-separator {
-  background-color: dodgerblue;
+  background-color: #0282f9;
   color: white;
   padding: 30px 10% 30px;
 }
@@ -203,7 +264,7 @@ footer .socials ul li {
 }
 
 body {
-  background-color: dodgerblue;
+  background-color: #0282f9;
   font-family: "Roboto Condensed", sans-serif;
 }
 

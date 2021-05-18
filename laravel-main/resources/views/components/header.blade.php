@@ -1,8 +1,16 @@
 <header>
     <section class="linked-sites">
         <ul>
-            <li>ciaooo</li>
-            <li>ADDITIONAL SITES</li>
+            <li>
+                <a href="#">
+                    DC POWER&#8480; VISA&reg;
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    ADDITIONAL SITES <i class="fas fa-caret-down"></i>
+                </a>
+            </li>
         </ul>
     </section>
 
@@ -20,9 +28,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/">
+                    <a href="/" class="active">
                         COMICS
                     </a>
+                    <div class="active-bar"></div>
                 </li>
                 <li>
                     <a href="#">
@@ -62,10 +71,12 @@
                 <li>
                     <a href="#">
                         SHOP
+                        <i class="fas fa-caret-down"></i>
                     </a>
                 </li>
-                <li>
-                    Search
+                <li class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <i class="fas fa-search"></i>
                 </li>
             </ul>
         </nav>

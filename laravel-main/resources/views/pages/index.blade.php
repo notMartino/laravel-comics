@@ -2,19 +2,20 @@
 
 @section('content')
     <main>
-        {{-- Sezione jumbotron --}}
-        
-        {{-- <section class="jumbo"></section> --}}
+        <div class="title-box">
+            CURRENT SERIES
+        </div>
 
         {{-- Sezione principale --}}
         <section class="series">
 
-
             <ul>
                 @foreach ($data as $serie)
                     <li class="cover">
-                        <img src="{{ $serie['thumb'] }}" alt="">
-                        <h4>{{strtoupper($serie['series'])}}</h4>
+                        <a href="#">
+                            <img src="{{ $serie['thumb'] }}" alt="">
+                            <h4>{{strtoupper($serie['series'])}}</h4>
+                        </a>
                     </li>
                 @endforeach
             </ul>
