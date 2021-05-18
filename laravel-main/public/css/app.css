@@ -223,6 +223,19 @@ main .blue-separator.img-container .float-img .gallery {
   bottom: 0;
 }
 
+main .description {
+  background-color: white;
+  padding: 40px 10% 40px;
+}
+
+main .description .info {
+  width: 70%;
+}
+
+main .description .info h2 {
+  color: #003f5e;
+}
+
 footer .jumbo-nav {
   height: 410px;
   padding: 30px 10% 30px;
