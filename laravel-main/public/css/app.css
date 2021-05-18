@@ -184,6 +184,45 @@ main .blue-separator ul li a img#credit {
   margin: 10px 20px 10px 0;
 }
 
+main .blue-separator.img-container {
+  position: relative;
+  z-index: 100;
+  height: 70px;
+}
+
+main .blue-separator.img-container .float-img {
+  height: 250px;
+  position: absolute;
+  z-index: 10;
+  top: -200px;
+  left: 10%;
+  border: 1px solid white;
+}
+
+main .blue-separator.img-container .float-img img {
+  height: 100%;
+}
+
+main .blue-separator.img-container .float-img .type,
+main .blue-separator.img-container .float-img .gallery {
+  position: absolute;
+  left: 0;
+  z-index: 50;
+  background-color: #00a9d9;
+  font-size: 13px;
+  padding: 2px 5px;
+  text-align: center;
+}
+
+main .blue-separator.img-container .float-img .type {
+  top: 0;
+}
+
+main .blue-separator.img-container .float-img .gallery {
+  width: 100%;
+  bottom: 0;
+}
+
 footer .jumbo-nav {
   height: 410px;
   padding: 30px 10% 30px;

@@ -443,7 +443,6 @@ class mainController extends Controller
         ];
 
         $thisSerie = $data[$index];
-        dd($thisSerie);
-        return view('pages/serie', compact($thisSerie));
+        return view('pages/serie', compact('thisSerie'));
     }
 }
