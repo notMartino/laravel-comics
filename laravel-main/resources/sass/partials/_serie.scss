@@ -98,21 +98,68 @@ main{
     }
 
     .specs{
-        @include centeringSerie(20px, 0);
+        @include centeringSerie(20px, 50px);
         background-color: #f6f6f6;
         display: flex;
+        flex-wrap: wrap;
         div{
             padding: 10px 0;
-            flex-basis: calc(50% - 40px);
-            h2{
-                color: #003f5e;
-                width: 100%;
-            }
-            .row{
-                margin: 0;
+            flex-basis: 50%;
+            ul.box{
                 display: flex;
-                justify-content: space-between;
+                flex-wrap: wrap;
+                &.rm{
+                    margin-right: 25px;
+                }
+                &.lm{
+                    margin-left: 25px;
+                }
+                li{
+                    border-bottom: 1px solid #e3e3e3;
+                }
+
+                .title{
+                    flex-basis: 100%;
+                    padding-bottom: 20px;
+                    h2{
+                        color: #003f5e;
+                    }
+                }
+                .argument{
+                    flex-basis: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 10px 0;
+                    h5{
+                        color: #003f5e;
+                        font-weight: normal;
+                        font-size: 13px;
+                        flex-basis: 100px;
+                    }
+                    p{
+                        flex-basis: calc(100% - 100px);
+                        font-size: 13px;  
+                        color: #00b0e1;
+                    }
+                } 
             }
+        }
+    }
+
+    .bottom-links{
+        @include centeringSerie(0, 0);
+        background-color: #f6f6f6;
+        border-top: 1px solid #e3e3e3;
+        display: flex;
+        .box{
+            padding: 20px;
+            border-left: 1px solid #e3e3e3;
+            border-right: 1px solid #e3e3e3;
+            font-size: 13px;
+            color: #9f9f9f;
+            flex-basis: calc(100% / 4);
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
